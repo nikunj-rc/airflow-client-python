@@ -28,6 +28,7 @@ client/model/action_collection.py
 client/model/action_collection_all_of.py
 client/model/action_resource.py
 client/model/class_reference.py
+client/model/clear_dag_run.py
 client/model/clear_task_instance.py
 client/model/collection_info.py
 client/model/color.py
@@ -122,6 +123,7 @@ docs/ActionCollection.md
 docs/ActionCollectionAllOf.md
 docs/ActionResource.md
 docs/ClassReference.md
+docs/ClearDagRun.md
 docs/ClearTaskInstance.md
 docs/CollectionInfo.md
 docs/Color.md
@@ -230,6 +232,7 @@ test/test_action_collection.py
 test/test_action_collection_all_of.py
 test/test_action_resource.py
 test/test_class_reference.py
+test/test_clear_dag_run.py
 test/test_clear_task_instance.py
 test/test_collection_info.py
 test/test_color.py
