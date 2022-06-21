@@ -41,7 +41,10 @@ class VariableApi(object):
         self.delete_variable_endpoint = _Endpoint(
             settings={
                 'response_type': None,
-                'auth': [],
+                'auth': [
+                    'Basic',
+                    'Kerberos'
+                ],
                 'endpoint_path': '/variables/{variable_key}',
                 'operation_id': 'delete_variable',
                 'http_method': 'DELETE',
@@ -90,7 +93,10 @@ class VariableApi(object):
         self.get_variable_endpoint = _Endpoint(
             settings={
                 'response_type': (Variable,),
-                'auth': [],
+                'auth': [
+                    'Basic',
+                    'Kerberos'
+                ],
                 'endpoint_path': '/variables/{variable_key}',
                 'operation_id': 'get_variable',
                 'http_method': 'GET',
@@ -139,7 +145,10 @@ class VariableApi(object):
         self.get_variables_endpoint = _Endpoint(
             settings={
                 'response_type': (VariableCollection,),
-                'auth': [],
+                'auth': [
+                    'Basic',
+                    'Kerberos'
+                ],
                 'endpoint_path': '/variables',
                 'operation_id': 'get_variables',
                 'http_method': 'GET',
@@ -201,7 +210,10 @@ class VariableApi(object):
         self.patch_variable_endpoint = _Endpoint(
             settings={
                 'response_type': (Variable,),
-                'auth': [],
+                'auth': [
+                    'Basic',
+                    'Kerberos'
+                ],
                 'endpoint_path': '/variables/{variable_key}',
                 'operation_id': 'patch_variable',
                 'http_method': 'PATCH',
@@ -263,7 +275,10 @@ class VariableApi(object):
         self.post_variables_endpoint = _Endpoint(
             settings={
                 'response_type': (Variable,),
-                'auth': [],
+                'auth': [
+                    'Basic',
+                    'Kerberos'
+                ],
                 'endpoint_path': '/variables',
                 'operation_id': 'post_variables',
                 'http_method': 'POST',

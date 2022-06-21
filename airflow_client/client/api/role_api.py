@@ -41,7 +41,10 @@ class RoleApi(object):
         self.delete_role_endpoint = _Endpoint(
             settings={
                 'response_type': None,
-                'auth': [],
+                'auth': [
+                    'Basic',
+                    'Kerberos'
+                ],
                 'endpoint_path': '/roles/{role_name}',
                 'operation_id': 'delete_role',
                 'http_method': 'DELETE',
@@ -90,7 +93,10 @@ class RoleApi(object):
         self.get_role_endpoint = _Endpoint(
             settings={
                 'response_type': (Role,),
-                'auth': [],
+                'auth': [
+                    'Basic',
+                    'Kerberos'
+                ],
                 'endpoint_path': '/roles/{role_name}',
                 'operation_id': 'get_role',
                 'http_method': 'GET',
@@ -139,7 +145,10 @@ class RoleApi(object):
         self.get_roles_endpoint = _Endpoint(
             settings={
                 'response_type': (RoleCollection,),
-                'auth': [],
+                'auth': [
+                    'Basic',
+                    'Kerberos'
+                ],
                 'endpoint_path': '/roles',
                 'operation_id': 'get_roles',
                 'http_method': 'GET',
@@ -201,7 +210,10 @@ class RoleApi(object):
         self.patch_role_endpoint = _Endpoint(
             settings={
                 'response_type': (Role,),
-                'auth': [],
+                'auth': [
+                    'Basic',
+                    'Kerberos'
+                ],
                 'endpoint_path': '/roles/{role_name}',
                 'operation_id': 'patch_role',
                 'http_method': 'PATCH',
@@ -263,7 +275,10 @@ class RoleApi(object):
         self.post_role_endpoint = _Endpoint(
             settings={
                 'response_type': (Role,),
-                'auth': [],
+                'auth': [
+                    'Basic',
+                    'Kerberos'
+                ],
                 'endpoint_path': '/roles',
                 'operation_id': 'post_role',
                 'http_method': 'POST',

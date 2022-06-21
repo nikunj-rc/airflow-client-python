@@ -41,7 +41,10 @@ class EventLogApi(object):
         self.get_event_log_endpoint = _Endpoint(
             settings={
                 'response_type': (EventLog,),
-                'auth': [],
+                'auth': [
+                    'Basic',
+                    'Kerberos'
+                ],
                 'endpoint_path': '/eventLogs/{event_log_id}',
                 'operation_id': 'get_event_log',
                 'http_method': 'GET',
@@ -90,7 +93,10 @@ class EventLogApi(object):
         self.get_event_logs_endpoint = _Endpoint(
             settings={
                 'response_type': (EventLogCollection,),
-                'auth': [],
+                'auth': [
+                    'Basic',
+                    'Kerberos'
+                ],
                 'endpoint_path': '/eventLogs',
                 'operation_id': 'get_event_logs',
                 'http_method': 'GET',

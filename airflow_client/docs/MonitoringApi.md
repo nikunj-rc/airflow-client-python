@@ -17,6 +17,7 @@ Get the status of Airflow's metadatabase and scheduler. It includes info about m
 
 ### Example
 
+* Basic Authentication (Basic):
 
 ```python
 import time
@@ -30,9 +31,19 @@ configuration = client.Configuration(
     host = "http://localhost/api/v1"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: Basic
+configuration = client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with client.ApiClient() as api_client:
+with client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = monitoring_api.MonitoringApi(api_client)
 
@@ -55,7 +66,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic), [Kerberos](../README.md#Kerberos)
 
 ### HTTP request headers
 
@@ -78,6 +89,7 @@ Get version information
 
 ### Example
 
+* Basic Authentication (Basic):
 
 ```python
 import time
@@ -91,9 +103,19 @@ configuration = client.Configuration(
     host = "http://localhost/api/v1"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: Basic
+configuration = client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with client.ApiClient() as api_client:
+with client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = monitoring_api.MonitoringApi(api_client)
 
@@ -116,7 +138,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic), [Kerberos](../README.md#Kerberos)
 
 ### HTTP request headers
 

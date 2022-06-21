@@ -42,7 +42,10 @@ class ConnectionApi(object):
         self.delete_connection_endpoint = _Endpoint(
             settings={
                 'response_type': None,
-                'auth': [],
+                'auth': [
+                    'Basic',
+                    'Kerberos'
+                ],
                 'endpoint_path': '/connections/{connection_id}',
                 'operation_id': 'delete_connection',
                 'http_method': 'DELETE',
@@ -91,7 +94,10 @@ class ConnectionApi(object):
         self.get_connection_endpoint = _Endpoint(
             settings={
                 'response_type': (Connection,),
-                'auth': [],
+                'auth': [
+                    'Basic',
+                    'Kerberos'
+                ],
                 'endpoint_path': '/connections/{connection_id}',
                 'operation_id': 'get_connection',
                 'http_method': 'GET',
@@ -140,7 +146,10 @@ class ConnectionApi(object):
         self.get_connections_endpoint = _Endpoint(
             settings={
                 'response_type': (ConnectionCollection,),
-                'auth': [],
+                'auth': [
+                    'Basic',
+                    'Kerberos'
+                ],
                 'endpoint_path': '/connections',
                 'operation_id': 'get_connections',
                 'http_method': 'GET',
@@ -202,7 +211,10 @@ class ConnectionApi(object):
         self.patch_connection_endpoint = _Endpoint(
             settings={
                 'response_type': (Connection,),
-                'auth': [],
+                'auth': [
+                    'Basic',
+                    'Kerberos'
+                ],
                 'endpoint_path': '/connections/{connection_id}',
                 'operation_id': 'patch_connection',
                 'http_method': 'PATCH',
@@ -264,7 +276,10 @@ class ConnectionApi(object):
         self.post_connection_endpoint = _Endpoint(
             settings={
                 'response_type': (Connection,),
-                'auth': [],
+                'auth': [
+                    'Basic',
+                    'Kerberos'
+                ],
                 'endpoint_path': '/connections',
                 'operation_id': 'post_connection',
                 'http_method': 'POST',
@@ -314,7 +329,10 @@ class ConnectionApi(object):
         self.test_connection_endpoint = _Endpoint(
             settings={
                 'response_type': (ConnectionTest,),
-                'auth': [],
+                'auth': [
+                    'Basic',
+                    'Kerberos'
+                ],
                 'endpoint_path': '/connections/test',
                 'operation_id': 'test_connection',
                 'http_method': 'POST',

@@ -17,6 +17,7 @@ This endpoint allows specifying `~` as the dag_id, dag_run_id, task_id to retrie
 
 ### Example
 
+* Basic Authentication (Basic):
 
 ```python
 import time
@@ -31,9 +32,19 @@ configuration = client.Configuration(
     host = "http://localhost/api/v1"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: Basic
+configuration = client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with client.ApiClient() as api_client:
+with client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = x_com_api.XComApi(api_client)
     dag_id = "dag_id_example" # str | The DAG ID.
@@ -77,7 +88,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic), [Kerberos](../README.md#Kerberos)
 
 ### HTTP request headers
 
@@ -102,6 +113,7 @@ Get an XCom entry
 
 ### Example
 
+* Basic Authentication (Basic):
 
 ```python
 import time
@@ -116,9 +128,19 @@ configuration = client.Configuration(
     host = "http://localhost/api/v1"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: Basic
+configuration = client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with client.ApiClient() as api_client:
+with client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = x_com_api.XComApi(api_client)
     dag_id = "dag_id_example" # str | The DAG ID.
@@ -151,7 +173,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic), [Kerberos](../README.md#Kerberos)
 
 ### HTTP request headers
 
