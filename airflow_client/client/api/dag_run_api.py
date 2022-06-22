@@ -22,7 +22,6 @@ from airflow_client.client.model_utils import (  # noqa: F401
     none_type,
     validate_and_convert_types
 )
-from airflow_client.client.model.clear_dag_run import ClearDagRun
 from airflow_client.client.model.dag_run import DAGRun
 from airflow_client.client.model.dag_run_collection import DAGRunCollection
 from airflow_client.client.model.error import Error
@@ -81,8 +80,6 @@ class DAGRunApi(object):
                         (str,),
                     'dag_run_id':
                         (str,),
-                    'clear_dag_run':
-                        (ClearDagRun,),
                 },
                 'attribute_map': {
                     'dag_id': 'dag_id',
