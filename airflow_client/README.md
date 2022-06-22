@@ -316,7 +316,6 @@ Class | Method | HTTP request | Description
 *DAGApi* | [**patch_dags**](docs/DAGApi.md#patch_dags) | **PATCH** /dags | Update DAGs
 *DAGApi* | [**post_clear_task_instances**](docs/DAGApi.md#post_clear_task_instances) | **POST** /dags/{dag_id}/clearTaskInstances | Clear a set of task instances
 *DAGApi* | [**post_set_task_instances_state**](docs/DAGApi.md#post_set_task_instances_state) | **POST** /dags/{dag_id}/updateTaskInstancesState | Set a state of task instances
-*DAGRunApi* | [**clear_dag_run**](docs/DAGRunApi.md#clear_dag_run) | **POST** /dags/{dag_id}/dagRuns/{dag_run_id}/clear | Clear a DAG run
 *DAGRunApi* | [**delete_dag_run**](docs/DAGRunApi.md#delete_dag_run) | **DELETE** /dags/{dag_id}/dagRuns/{dag_run_id} | Delete a DAG run
 *DAGRunApi* | [**get_dag_run**](docs/DAGRunApi.md#get_dag_run) | **GET** /dags/{dag_id}/dagRuns/{dag_run_id} | Get a DAG run
 *DAGRunApi* | [**get_dag_runs**](docs/DAGRunApi.md#get_dag_runs) | **GET** /dags/{dag_id}/dagRuns | List DAG runs
@@ -370,7 +369,6 @@ Class | Method | HTTP request | Description
  - [ActionCollectionAllOf](docs/ActionCollectionAllOf.md)
  - [ActionResource](docs/ActionResource.md)
  - [ClassReference](docs/ClassReference.md)
- - [ClearDagRun](docs/ClearDagRun.md)
  - [ClearTaskInstance](docs/ClearTaskInstance.md)
  - [CollectionInfo](docs/CollectionInfo.md)
  - [Color](docs/Color.md)

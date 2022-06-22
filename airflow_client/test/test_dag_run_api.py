@@ -24,13 +24,6 @@ class TestDAGRunApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_clear_dag_run(self):
-        """Test case for clear_dag_run
-
-        Clear a DAG run  # noqa: E501
-        """
-        pass
-
     def test_delete_dag_run(self):
         """Test case for delete_dag_run
 

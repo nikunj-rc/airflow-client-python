@@ -60,11 +60,6 @@ class DAGRun(ModelNormal):
     """
 
     allowed_values = {
-        ('run_type',): {
-            'BACKFILL': "backfill",
-            'MANUAL': "manual",
-            'SCHEDULED': "scheduled",
-        },
     }
 
     validations = {
@@ -99,10 +94,6 @@ class DAGRun(ModelNormal):
             'execution_date': (datetime, none_type,),  # noqa: E501
             'start_date': (datetime, none_type,),  # noqa: E501
             'end_date': (datetime, none_type,),  # noqa: E501
-            'data_interval_start': (datetime, none_type,),  # noqa: E501
-            'data_interval_end': (datetime, none_type,),  # noqa: E501
-            'last_scheduling_decision': (datetime, none_type,),  # noqa: E501
-            'run_type': (str,),  # noqa: E501
             'state': (DagState,),  # noqa: E501
             'external_trigger': (bool,),  # noqa: E501
             'conf': ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},),  # noqa: E501
@@ -120,10 +111,6 @@ class DAGRun(ModelNormal):
         'execution_date': 'execution_date',  # noqa: E501
         'start_date': 'start_date',  # noqa: E501
         'end_date': 'end_date',  # noqa: E501
-        'data_interval_start': 'data_interval_start',  # noqa: E501
-        'data_interval_end': 'data_interval_end',  # noqa: E501
-        'last_scheduling_decision': 'last_scheduling_decision',  # noqa: E501
-        'run_type': 'run_type',  # noqa: E501
         'state': 'state',  # noqa: E501
         'external_trigger': 'external_trigger',  # noqa: E501
         'conf': 'conf',  # noqa: E501
@@ -133,10 +120,6 @@ class DAGRun(ModelNormal):
         'dag_id',  # noqa: E501
         'start_date',  # noqa: E501
         'end_date',  # noqa: E501
-        'data_interval_start',  # noqa: E501
-        'data_interval_end',  # noqa: E501
-        'last_scheduling_decision',  # noqa: E501
-        'run_type',  # noqa: E501
         'external_trigger',  # noqa: E501
     }
 
@@ -184,10 +167,6 @@ class DAGRun(ModelNormal):
             execution_date (datetime, none_type): The execution date. This is the same as logical_date, kept for backwards compatibility. If both this field and logical_date are provided but with different values, the request will fail with an BAD_REQUEST error.  *Changed in version 2.2.0*&#58; Field becomes nullable.  *Deprecated since version 2.2.0*&#58; Use 'logical_date' instead. . [optional]  # noqa: E501
             start_date (datetime, none_type): The start time. The time when DAG run was actually created.  *Changed in version 2.1.3*&#58; Field becomes nullable. . [optional]  # noqa: E501
             end_date (datetime, none_type): [optional]  # noqa: E501
-            data_interval_start (datetime, none_type): [optional]  # noqa: E501
-            data_interval_end (datetime, none_type): [optional]  # noqa: E501
-            last_scheduling_decision (datetime, none_type): [optional]  # noqa: E501
-            run_type (str): [optional]  # noqa: E501
             state (DagState): [optional]  # noqa: E501
             external_trigger (bool): [optional] if omitted the server will use the default value of True  # noqa: E501
             conf ({str: (bool, date, datetime, dict, float, int, list, str, none_type)}): JSON object describing additional configuration parameters.  The value of this field can be set only when creating the object. If you try to modify the field of an existing object, the request fails with an BAD_REQUEST error. . [optional]  # noqa: E501
@@ -278,10 +257,6 @@ class DAGRun(ModelNormal):
             execution_date (datetime, none_type): The execution date. This is the same as logical_date, kept for backwards compatibility. If both this field and logical_date are provided but with different values, the request will fail with an BAD_REQUEST error.  *Changed in version 2.2.0*&#58; Field becomes nullable.  *Deprecated since version 2.2.0*&#58; Use 'logical_date' instead. . [optional]  # noqa: E501
             start_date (datetime, none_type): The start time. The time when DAG run was actually created.  *Changed in version 2.1.3*&#58; Field becomes nullable. . [optional]  # noqa: E501
             end_date (datetime, none_type): [optional]  # noqa: E501
-            data_interval_start (datetime, none_type): [optional]  # noqa: E501
-            data_interval_end (datetime, none_type): [optional]  # noqa: E501
-            last_scheduling_decision (datetime, none_type): [optional]  # noqa: E501
-            run_type (str): [optional]  # noqa: E501
             state (DagState): [optional]  # noqa: E501
             external_trigger (bool): [optional] if omitted the server will use the default value of True  # noqa: E501
             conf ({str: (bool, date, datetime, dict, float, int, list, str, none_type)}): JSON object describing additional configuration parameters.  The value of this field can be set only when creating the object. If you try to modify the field of an existing object, the request fails with an BAD_REQUEST error. . [optional]  # noqa: E501

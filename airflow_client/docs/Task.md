@@ -13,7 +13,6 @@ Name | Type | Description | Notes
 **trigger_rule** | [**TriggerRule**](TriggerRule.md) |  | [optional] 
 **extra_links** | [**[TaskExtraLinks]**](TaskExtraLinks.md) |  | [optional] [readonly] 
 **depends_on_past** | **bool** |  | [optional] [readonly] 
-**is_mapped** | **bool** |  | [optional] [readonly] 
 **wait_for_downstream** | **bool** |  | [optional] [readonly] 
 **retries** | **float** |  | [optional] [readonly] 
 **queue** | **str** |  | [optional] [readonly] 

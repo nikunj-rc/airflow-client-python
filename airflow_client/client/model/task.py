@@ -108,7 +108,6 @@ class Task(ModelNormal):
             'trigger_rule': (TriggerRule,),  # noqa: E501
             'extra_links': ([TaskExtraLinks],),  # noqa: E501
             'depends_on_past': (bool,),  # noqa: E501
-            'is_mapped': (bool,),  # noqa: E501
             'wait_for_downstream': (bool,),  # noqa: E501
             'retries': (float,),  # noqa: E501
             'queue': (str,),  # noqa: E501
@@ -140,7 +139,6 @@ class Task(ModelNormal):
         'trigger_rule': 'trigger_rule',  # noqa: E501
         'extra_links': 'extra_links',  # noqa: E501
         'depends_on_past': 'depends_on_past',  # noqa: E501
-        'is_mapped': 'is_mapped',  # noqa: E501
         'wait_for_downstream': 'wait_for_downstream',  # noqa: E501
         'retries': 'retries',  # noqa: E501
         'queue': 'queue',  # noqa: E501
@@ -165,7 +163,6 @@ class Task(ModelNormal):
         'end_date',  # noqa: E501
         'extra_links',  # noqa: E501
         'depends_on_past',  # noqa: E501
-        'is_mapped',  # noqa: E501
         'wait_for_downstream',  # noqa: E501
         'retries',  # noqa: E501
         'queue',  # noqa: E501
@@ -223,7 +220,6 @@ class Task(ModelNormal):
             trigger_rule (TriggerRule): [optional]  # noqa: E501
             extra_links ([TaskExtraLinks]): [optional]  # noqa: E501
             depends_on_past (bool): [optional]  # noqa: E501
-            is_mapped (bool): [optional]  # noqa: E501
             wait_for_downstream (bool): [optional]  # noqa: E501
             retries (float): [optional]  # noqa: E501
             queue (str): [optional]  # noqa: E501
@@ -328,7 +324,6 @@ class Task(ModelNormal):
             trigger_rule (TriggerRule): [optional]  # noqa: E501
             extra_links ([TaskExtraLinks]): [optional]  # noqa: E501
             depends_on_past (bool): [optional]  # noqa: E501
-            is_mapped (bool): [optional]  # noqa: E501
             wait_for_downstream (bool): [optional]  # noqa: E501
             retries (float): [optional]  # noqa: E501
             queue (str): [optional]  # noqa: E501

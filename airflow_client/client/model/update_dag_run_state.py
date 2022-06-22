@@ -59,7 +59,6 @@ class UpdateDagRunState(ModelNormal):
         ('state',): {
             'SUCCESS': "success",
             'FAILED': "failed",
-            'QUEUED': "queued",
         },
     }
 

@@ -14,7 +14,6 @@ from airflow_client.client.model.action_collection import ActionCollection
 from airflow_client.client.model.action_collection_all_of import ActionCollectionAllOf
 from airflow_client.client.model.action_resource import ActionResource
 from airflow_client.client.model.class_reference import ClassReference
-from airflow_client.client.model.clear_dag_run import ClearDagRun
 from airflow_client.client.model.clear_task_instance import ClearTaskInstance
 from airflow_client.client.model.collection_info import CollectionInfo
 from airflow_client.client.model.color import Color
