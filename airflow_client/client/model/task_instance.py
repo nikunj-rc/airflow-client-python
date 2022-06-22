@@ -110,7 +110,6 @@ class TaskInstance(ModelNormal):
             'queued_when': (str, none_type,),  # noqa: E501
             'pid': (int, none_type,),  # noqa: E501
             'executor_config': (str,),  # noqa: E501
-            'sla_miss': (SLAMiss,),  # noqa: E501
             'rendered_fields': ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},),  # noqa: E501
         }
 
@@ -140,7 +139,6 @@ class TaskInstance(ModelNormal):
         'queued_when': 'queued_when',  # noqa: E501
         'pid': 'pid',  # noqa: E501
         'executor_config': 'executor_config',  # noqa: E501
-        'sla_miss': 'sla_miss',  # noqa: E501
         'rendered_fields': 'rendered_fields',  # noqa: E501
     }
 
